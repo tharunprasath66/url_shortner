@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+     crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.527);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+header{
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: x-large;
+    text-align: center;
+    color: black;
+    background-color: rgba(13, 89, 175, 0.466);
+}
+
+.classic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+form{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.field{
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 0.349);
+    color: black;
+    height: 35px;
+    width: fit-content;
+    font-size: large;
+} 
+
+.button1{
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    height: 35px;
+}
+    </style>
+    <title>url shortner</title>
+</head>
+<body>
+    <header>
+        <b>url-shortner</b>
+    </header>
+    <div class="classic">
+        <form action="/short" method="post">
+            <input type="url" placeholder="https://example.com" name="long" class="field">
+            <input type="submit" value="short it !" class="button1">
+        </form>
+    </div>
+</body>
+</html>
